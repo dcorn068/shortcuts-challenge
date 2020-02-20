@@ -24,125 +24,13 @@ const myData = [
 //
 //
 //
-//
-//
-//
-// scroll down for 💡 hints, scroll further for 📖 a solution
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // 💡 Text Pastry extension - paste incrementing numbers like 1,2,3 on multiple cursors
-//
 //
 // 💡 Ctrl D - add next instance to selection
 // 💡 Ctrl K - remove current instance from selection
-// 💡 e.g.
-// 💡 Ctrl D, K, D       - add next-next instance to selection
-// 💡 Ctrl D, K, D, K, D - add next-next-next instance to selection
 //
+//      e.g.
+//      Ctrl D, K, D       - add next-next instance to selection
+//      Ctrl D, K, D, K, D - add next-next-next instance to selection
 //
 // 💡 add {brackets} or "quotes" around a selection by typing only the opening bracket/quote
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// 📖
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//

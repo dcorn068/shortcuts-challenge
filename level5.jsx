@@ -1,32 +1,51 @@
 // ------ START ------
 
-const MyComponent = () => {
-  const propsObject = {
-    prop1: "value1",
-    prop2: "value2",
-    prop3: "value3",
-    prop4: "value4",
-    prop5: "value5"
+function cleanup() {
+  const networkConnections = {
+    "Machemetry: processes": machemetryStatus,
+    "Askr: shifts": askrShiftsStatus,
+    "Askr: segments": askrSegmentsStatus,
+    "Askr: aggregates": askrAggregatesStatus,
+    "Midgard: outputCounts": midgardOutputCountsStatus,
+    "Midgard: skuScale, skuStart": midgardSkuInfoStatus
   };
-  return (
-    <div>
-      <AnotherComponent {...propsObject} />
-    </div>
-  );
-};
+  return {
+    machemetryStatus: Object.values(latestFromMachemetry).length > 0,
+    askrShiftsStatus: Object.values(shifts).length > 0,
+    askrSegmentsStatus: Object.values(segments).length > 0,
+    askrAggregatesStatus:
+      Object.values(rollupsMetricForCurrentShift).length +
+        Object.values(rollupsMetricForCurrent24Hours).length +
+        Object.values(rollupsMetricForCustomRange).length >
+      0,
+    midgardSkuInfoStatus: Object.values(allMidgardData).length > 0,
+    midgardOutputCountsStatus: Object.values(outputCounts).length > 0
+  };
+}
 
 // ------ FINISH ------
 
-const MyComponent = () => {
-  return (
-    <div>
-      <AnotherComponent
-        prop1={"value1"}
-        prop2={"value2"}
-        prop3={"value3"}
-        prop4={"value4"}
-        prop5={"value5"}
-      />
-    </div>
-  );
-};
+function cleanup() {
+  const machemetryStatus = Object.values(latestFromMachemetry).length > 0;
+  const askrShiftsStatus = Object.values(shifts).length > 0;
+  const askrSegmentsStatus = Object.values(segments).length > 0;
+  const askrAggregatesStatus =
+    Object.values(rollupsMetricForCurrentShift).length +
+      Object.values(rollupsMetricForCurrent24Hours).length +
+      Object.values(rollupsMetricForCustomRange).length >
+    0;
+  const midgardSkuInfoStatus = Object.values(allMidgardData).length > 0;
+  const midgardOutputCountsStatus = Object.values(outputCounts).length > 0;
+
+  const networkConnections = {
+    "Machemetry: processes": machemetryStatus,
+    "Askr: shifts": askrShiftsStatus,
+    "Askr: segments": askrSegmentsStatus,
+    "Askr: aggregates": askrAggregatesStatus,
+    "Midgard: outputCounts": midgardOutputCountsStatus,
+    "Midgard: skuScale, skuStart": midgardSkuInfoStatus
+  };
+  return {
+    networkConnections
+  };
+}

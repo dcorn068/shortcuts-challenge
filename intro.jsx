@@ -15,9 +15,7 @@
 //
 //      2. After each challenge a lucky contestant will share their solution!
 //
-//      4. Scroll halfway down to 💡 for hints
-//
-//      3. Scroll all the way down to 📖 for a solution (not necessarily the best!)
+//      4. Scroll down for 💡 hints
 //
 //
 //
