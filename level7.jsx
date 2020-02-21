@@ -1,4 +1,5 @@
-// START
+// ------ START ------
+
 import { GroupMetricsStyles } from "../GroupMetrics/GroupMetricsStyles";
 import { CenterMetricTitle } from "./CenterMetricTitle/CenterMetricTitle";
 import {
@@ -12,7 +13,8 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { initialState } from "../../../providers/GlobalStateProvider";
 
-// FINISH
+// ------ FINISH ------
+
 import { GroupMetricsStyles } from "../../GroupMetrics/GroupMetricsStyles";
 import { CenterMetricTitle } from "./../CenterMetricTitle/CenterMetricTitle";
 import {
